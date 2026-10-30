@@ -1,0 +1,62 @@
+// ============================================================
+// SCSS 变量与 mixin —— 本文件被 vite additionalData 注入每个编译单元
+// 警告：只能放 SCSS 变量 / mixin / 函数，禁止写实体 CSS（否则会被重复注入）
+// 实体 CSS 变量（--xxx）请写到 reset.scss 的 :root
+// ============================================================
+
+// 品牌色
+$brand-primary: #1d6fff;
+$brand-primary-light: #4d8fff;
+$brand-primary-dark: #0e54d6;
+$brand-success: #15b374;
+$brand-warning: #f59a23;
+$brand-danger: #f04d4f;
+$brand-info: #86909c;
+
+// 布局尺寸
+$sidebar-width: 220px;
+$sidebar-collapsed-width: 64px;
+$header-height: 56px;
+$tags-view-height: 0px;
+
+// 间距 / 圆角 / 阴影
+$gap-xs: 4px;
+$gap-sm: 8px;
+$gap-base: 16px;
+$gap-lg: 24px;
+$radius-sm: 4px;
+$radius-base: 8px;
+$radius-lg: 12px;
+$box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+$box-shadow-light: 0 1px 4px rgba(0, 0, 0, 0.04);
+
+// 断点（与 useDevice 保持一致）
+$breakpoint-mobile: 768px;
+
+// 窄屏 mixin：用 767.98px 避免断点重叠
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile - 0.02px}) {
+    @content;
+  }
+}
+
+// 平板及以上
+@mixin desktop {
+  @media (min-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+// 单行省略
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 柔性卡片
+@mixin card {
+  background: var(--app-bg-card);
+  border-radius: $radius-base;
+  box-shadow: $box-shadow-light;
+}

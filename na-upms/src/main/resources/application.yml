@@ -1,0 +1,169 @@
+# ============================================================
+# na-upms 单体配置
+# ------------------------------------------------------------
+# 直接连接 MySQL / Redis，单体部署，无注册中心 / 配置中心。
+# 连接信息优先读取环境变量；默认值仅为本机占位，真实凭据请通过环境变量注入。
+# ============================================================
+server:
+  port: 10061
+
+spring:
+  application:
+    name: na-upms
+  profiles:
+    # 默认使用 dev，便于本地直接看到控制台日志；生产可用 SPRING_PROFILES_ACTIVE 覆盖
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 直连数据库；生产环境通过环境变量覆盖
+    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:na_app_single}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USERNAME:xxxx}
+    password: ${MYSQL_PASSWORD:xxxx}
+
+    druid:
+      # 初始化连接池时创建的连接数量
+      initial-size: 5
+      # 连接池最大活跃连接数
+      max-active: 20
+      # 连接池最小空闲连接数
+      min-idle: 5
+      # 检测空闲连接的线程间隔时间(毫秒)
+      time-between-eviction-runs-millis: 60000
+      # 获取连接最大等待时长(毫秒)
+      max-wait: 60000
+      # 连接最小空闲存活时间(毫秒)
+      min-evictable-idle-time-millis: 300000
+      # 校验数据库连接是否可用
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+
+      # 监控过滤器：stat(监控统计)、wall(SQL防注入防火墙)、slf4j(日志输出)
+      filters: stat,wall,slf4j
+
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 2000
+          db-type: mysql
+        slf4j:
+          enabled: true
+          statement-log-error-enabled: true
+          statement-create-after-log-enabled: false
+          statement-close-after-log-enabled: false
+          result-set-open-after-log-enabled: false
+          result-set-close-after-log-enabled: false
+
+      use-global-data-source-stat: true
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+      # ========== Druid 监控页面 ==========
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 123456
+        reset-enable: false
+        url-pattern: /druid/*
+
+      # ========== Web 监控过滤器 ==========
+      web-stat-filter:
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.css,/druid/*"
+        enabled: true
+        session-stat-enable: true
+        session-stat-max-count: 1000
+
+      # ========== AOP 监控 ==========
+      aop-patterns: com.na.core.mapper.*
+
+  data:
+    redis:
+      # 直连 Redis；生产环境通过环境变量覆盖
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:xxxx}
+      database: ${REDIS_DATABASE:6}
+      timeout: 10000ms
+      lettuce:
+        pool:
+          min-idle: 0
+          max-idle: 8
+          max-active: 8
+          max-wait: 10s
+
+  servlet:
+    multipart:
+      max-file-size: 100GB
+      max-request-size: 100GB
+      enabled: true
+      location: /na/tmp
+
+mybatis-plus:
+  # Mapper XML 统一放在 resources/mapper 下
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+# SpringDoc OpenAPI3 + Knife4j
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    enable-swagger-models: true
+    enable-document-manage: true
+    enable-footer: false
+
+na:
+  redis:
+    enable: true
+  redisson:
+    enable: true
+  redisMessage:
+    enable: true
+  redisListener:
+    enable: true
+  jackson:
+    enable: true
+  sqlTime:
+    enable: false
+
+  # ========== 登录态 ==========
+  login:
+    # true = 同一账号只保留最新一次登录；false = 允许多端同时在线
+    single-token: false
+
+  # ========== WebSocket 实时推送 ==========
+  websocket:
+    enable: false
+    # 服务内连接路径；前端经 Vite/Nginx 的 /na-upms 代理访问
+    path: /ws
+    sender-type: redis
+    allowed-origins: "*"
+    send-time-limit: 5000
+    buffer-size-limit: 102400
+    auth-recheck-interval-ms: 60000
+    redis-channel: na:websocket:broadcast
+
+  auth:
+    skipApis:
+      - /video/**
+      - /video/admin-api/infra/file/*/get/**
+      - /ws
+      - /ws/**
+
+  # ========== 本地文件资源映射 ==========
+  file:
+    request-prefixes:
+      - /video/**
+      - /video/admin-api/infra/file/*/get/**
+    windows-path: D:/temp
+    linux-path: /na/temp

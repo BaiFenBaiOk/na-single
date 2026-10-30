@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.na.core.mapper.ISysRoleMapper">
+
+    <select id="queryPaging" resultType="com.na.entity.SysRoleEntity">
+        SELECT * FROM sys_role
+        <where>
+            <if test="params.roleName != null and params.roleName != ''">
+                and role_name like concat('%',#{params.roleName},'%')
+            </if>
+            <if test="params.roleCode != null and params.roleCode != ''">
+                and role_code like concat('%',#{params.roleCode},'%')
+            </if>
+            <if test="params.status != null">
+                and status = #{params.status}
+            </if>
+            <if test="params.isDel != null">
+                and is_del = #{params.isDel}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+    <select id="queryRoleByUserId" resultType="com.na.entity.SysRoleEntity">
+        SELECT DISTINCT
+        r.*
+        FROM
+        sys_role r
+        LEFT JOIN sys_map_role_user mur ON mur.role_id = r.id
+        WHERE
+        r.is_del = 0
+        and mur.user_id = #{userId}
+    </select>
+
+    <select id="queryRoleByRoleObj" resultType="com.na.entity.SysRoleEntity">
+        SELECT
+        *
+        FROM
+        sys_role
+        <where>
+            <if test="roleCode != null and roleCode != ''">
+                AND role_code = #{roleCode}
+            </if>
+            <if test="roleName != null and roleName != ''">
+                AND role_name = #{roleName}
+            </if>
+        </where>
+        LIMIT 1
+    </select>
+
+    <select id="queryRoleByRoleIds" resultType="com.na.entity.SysRoleEntity">
+        SELECT
+        *
+        FROM
+        sys_role
+        WHERE id IN
+        <foreach collection="roleIds" open="(" close=")" separator="," item="item" index="index">
+            #{item}
+        </foreach>
+    </select>
+
+</mapper>

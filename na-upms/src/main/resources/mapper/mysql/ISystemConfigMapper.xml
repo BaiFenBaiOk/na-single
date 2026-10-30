@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.na.core.mapper.ISystemConfigMapper">
+
+    <select id="queryAll" resultType="com.na.entity.SystemConfigEntity">
+        select * from system_config where is_del = 0
+    </select>
+
+    <select id="queryByCode" resultType="com.na.entity.SystemConfigEntity">
+        select * from system_config where is_del = 0 and `code` = #{code} limit 1
+    </select>
+
+    <select id="queryByCodes" resultType="com.na.entity.SystemConfigEntity">
+        select * from system_config where is_del = 0 and `code` in
+        <foreach collection="params" open="(" close=")" separator="," item="item" index="index">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="queryByFormId" resultType="com.na.entity.SystemConfigEntity">
+        select * from system_config where form_id = #{formId} and is_del = 0
+    </select>
+
+</mapper>

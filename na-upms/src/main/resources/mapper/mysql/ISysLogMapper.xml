@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.na.core.mapper.ISysLogMapper">
+
+    <select id="querySysLogPaging" resultType="com.na.entity.SysLogEntity">
+        SELECT DISTINCT
+        gsl.*, u.`user_name` AS userName,
+        u.nick_name AS nickName
+        FROM
+        sys_logs gsl
+        LEFT JOIN sys_user u ON u.id = gsl.user_id
+        <where>
+            <if test="params.userId != null">
+                AND gsl.user_id = #{params.userId}
+            </if>
+            <if test="params.model != null and params.model != ''">
+                AND gsl.module = #{params.model}
+            </if>
+            <if test="params.operate != null and params.operate != ''">
+                AND gsl.operate = #{params.operate}
+            </if>
+            <if test="params.userName != null and params.userName != ''">
+                AND u.`user_name` like CONCAT('%',#{params.userName},'%')
+            </if>
+            <if test="params.operateStartTime != null">
+                AND gsl.operate_time <![CDATA[ >= ]]> #{params.operateStartTime}
+            </if>
+            <if test="params.operateEndTime != null">
+                AND gsl.operate_time <![CDATA[ <= ]]> #{params.operateEndTime}
+            </if>
+            <if test="params.consumingType != null and params.consumingTime != null">
+                <if test="params.consumingType == 1">
+                    AND gsl.consuming_time > #{params.consumingTime}
+                </if>
+                <if test="params.consumingType == 2">
+                    AND gsl.consuming_time <![CDATA[ >= ]]> #{params.consumingTime}
+                </if>
+                <if test="params.consumingType == 3">
+                    AND gsl.consuming_time = #{params.consumingTime}
+                </if>
+                <if test="params.consumingType == 4">
+                    AND gsl.consuming_time <![CDATA[ < ]]> #{params.consumingTime}
+                </if>
+                <if test="params.consumingType == 5">
+                    AND gsl.consuming_time <![CDATA[ <= ]]> #{params.consumingTime}
+                </if>
+            </if>
+        </where>
+        ORDER BY gsl.operate_time DESC
+    </select>
+</mapper>

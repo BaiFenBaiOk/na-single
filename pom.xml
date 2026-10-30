@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.16</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.na</groupId>
+    <artifactId>na</artifactId>
+    <version>3.0.0</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>na 单体权限管理平台</description>
+
+    <modules>
+        <module>na-upms</module>
+    </modules>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <druid-spring-boot-starter.version>1.2.27</druid-spring-boot-starter.version>
+        <mysql-connector-java.version>8.0.33</mysql-connector-java.version>
+        <mybatis-plus.version>3.5.9</mybatis-plus.version>
+        <redisson.version>3.52.0</redisson.version>
+        <jjwt.version>0.11.5</jjwt.version>
+        <knife4j.version>4.5.0</knife4j.version>
+        <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
+        <commons-beanutils.version>1.9.4</commons-beanutils.version>
+        <commons-collections.version>3.2.1</commons-collections.version>
+        <fastjson.version>2.0.64</fastjson.version>
+        <fastjson2-extension.version>2.0.61</fastjson2-extension.version>
+        <hutool-all.version>5.8.40</hutool-all.version>
+        <feign-core.version>13.5</feign-core.version>
+        <ip2region.version>2.7.0</ip2region.version>
+        <aliyun-oss.version>2.8.3</aliyun-oss.version>
+        <oshi.version>6.9.2</oshi.version>
+        <na-tool.version>3.0.0</na-tool.version>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Druid 数据库连接池（Spring Boot 3 兼容版） -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-3-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <!-- MySQL 驱动 -->
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql-connector-java.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- MyBatis-Plus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- 分页等依赖 jsqlparser 的拦截器 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-jsqlparser</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-data-35</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+            <!-- Feign 核心库：外部 na-common 自动配置会引用 feign.RequestInterceptor -->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-core</artifactId>
+                <version>${feign-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- Knife4j OpenAPI3 Jakarta -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons-collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2-extension-spring6</artifactId>
+                <version>${fastjson2-extension.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${aliyun-oss.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.oshi</groupId>
+                <artifactId>oshi-core</artifactId>
+                <version>${oshi.version}</version>
+            </dependency>
+            <!-- na-tool 外部公共构件 -->
+            <dependency>
+                <groupId>io.github.na-tool</groupId>
+                <artifactId>na-common</artifactId>
+                <version>${na-tool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.na-tool</groupId>
+                <artifactId>na-auth</artifactId>
+                <version>${na-tool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.na-tool</groupId>
+                <artifactId>na-log</artifactId>
+                <version>${na-tool.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

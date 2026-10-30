@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.na.core.mapper.ISysMenuMapper">
+
+    <select id="queryPaging" resultType="com.na.entity.SysMenuEntity">
+        SELECT * FROM sys_menu
+        <where>
+            <!-- 自行拼接查询条件 -->
+        </where>
+    </select>
+    <select id="queryMenuAll" resultType="com.na.entity.SysMenuEntity">
+        SELECT DISTINCT
+        *
+        FROM
+        sys_menu
+        where
+        is_del = 0
+        <if test="params.menuTypes != null and params.menuTypes.size() > 0">
+            and menu_type IN
+            <foreach collection="params.menuTypes" open="(" close=")" separator="," item="item" index="index">
+                #{item}
+            </foreach>
+        </if>
+        <if test="params.menuName != null and params.menuName != ''">
+            and menu_name like CONCAT('%',#{params.menuName},'%')
+        </if>
+    </select>
+    <select id="selectMenuTreeByUserId" resultType="com.na.entity.SysMenuEntity">
+        SELECT DISTINCT
+        m.id,
+        m. NAME,
+        m.parent_id,
+        m.menu_name,
+        m.path,
+        m.component,
+        m.`query`,
+        m.visible,
+        m. STATUS,
+        m.request_uri,
+        ifnull(m.perms, '') AS perms,
+        m.is_frame,
+        m.is_cache,
+        m.menu_type,
+        m.icon,
+        m.order_num,
+        m.create_time
+        FROM
+        sys_menu m
+        LEFT JOIN sys_map_role_menu rm ON m.id = rm.menu_id
+        LEFT JOIN sys_map_role_user ur ON rm.role_id = ur.role_id
+        WHERE
+        ur.user_id = #{userId}
+        AND m.menu_type IN ('M', 'C')
+        AND m.STATUS = 0
+        AND m.is_del = 0
+        ORDER BY
+        m.parent_id,
+        m.order_num
+    </select>
+    <select id="queryMenuByUserId" resultType="com.na.entity.SysMenuEntity">
+        SELECT DISTINCT
+        m.id,
+        m. NAME,
+        m.parent_id,
+        m.menu_name,
+        m.path,
+        m.component,
+        m.`query`,
+        m.visible,
+        m. STATUS,
+        m.request_uri,
+        ifnull(m.perms, '') AS perms,
+        m.is_frame,
+        m.is_cache,
+        m.menu_type,
+        m.icon,
+        m.order_num,
+        m.create_time
+        FROM
+        sys_menu m
+        LEFT JOIN sys_map_role_menu rm ON m.id = rm.menu_id
+        LEFT JOIN sys_map_role_user ur ON rm.role_id = ur.role_id
+        WHERE
+        ur.user_id = #{userId}
+        AND m.STATUS = 0
+        AND m.is_del = 0
+        ORDER BY
+        m.parent_id,
+        m.order_num
+    </select>
+    <select id="selectMenuTreeAll" resultType="com.na.entity.SysMenuEntity">
+        SELECT DISTINCT
+        m.id,
+        m.name,
+        m.parent_id,
+        m.menu_name,
+        m.path,
+        m.component,
+        m.request_uri,
+        ifnull(m.perms, '') AS perms,
+        m.`query`,
+        m.visible,
+        m. STATUS,
+        m.is_frame,
+        m.is_cache,
+        m.menu_type,
+        m.icon,
+        m.order_num,
+        m.create_time
+        FROM
+        sys_menu m
+        WHERE
+        m.STATUS = 0
+        and m.menu_type in ('M','C')
+        <if test="params != null and params.size() > 0">
+            AND m.sys_menu_type in
+            <foreach collection="params" open="(" close=")" separator="," item="item" index="index">
+                #{item}
+            </foreach>
+        </if>
+        AND m.is_del = 0
+        ORDER BY
+        m.parent_id,
+        m.order_num
+    </select>
+    <select id="getMenuBtnByParentId" resultType="com.na.entity.SysMenuEntity">
+        SELECT
+        m.*
+        FROM
+        sys_menu m
+        WHERE
+        m.parent_id = #{parentId}
+        AND m.menu_type = 'F'
+        AND m.is_del = 0
+        AND m. STATUS = 0
+        ORDER BY m.order_num ASC, m.id ASC
+    </select>
+    <select id="getMenuBtnByParentIdAndUserId" resultType="com.na.entity.SysMenuEntity">
+        SELECT DISTINCT
+        m.*
+        FROM
+        sys_menu m
+        LEFT JOIN sys_map_role_menu mrm ON mrm.menu_id = m.id
+        LEFT JOIN sys_map_role_user mru ON mru.role_id = mrm.role_id
+        WHERE
+        m.parent_id = #{parentId}
+        AND m.menu_type = 'F'
+        AND m.is_del = 0
+        AND m. STATUS = 0
+        AND mru.user_id = #{userId}
+        ORDER BY m.order_num ASC, m.id ASC
+    </select>
+</mapper>

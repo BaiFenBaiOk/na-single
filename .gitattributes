@@ -1,0 +1,37 @@
+# AOCI baselines exact raw bytes, so a checkout must be byte-identical on
+# every platform: text always checks out LF, overriding any autocrlf rewrite
+# (the Windows default) that would otherwise mark the whole tree stale.
+# Binaries are auto-detected and left untouched.
+* text=auto eol=lf
+
+# Windows 脚本保持 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell 脚本与 SQL 使用 LF
+*.sh text eol=lf
+*.sql text eol=lf
+
+# 二进制文件不参与文本转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.bmp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.pdf binary
+*.zip binary
+*.rar binary
+*.jar binary
+*.xlsx binary
+*.docx binary
+*.pptx binary
+
+# 大文件如需纳入版本管理，安装 git-lfs 后取消注释：
+# *.rar filter=lfs diff=lfs merge=lfs -text

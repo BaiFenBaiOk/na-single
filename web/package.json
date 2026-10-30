@@ -1,0 +1,38 @@
+{
+  "name": "na-web",
+  "version": "3.0.0",
+  "private": true,
+  "description": "na RBAC 后台管理前端（Vue3 + Vite，适配 PC 与 H5）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "build:strict": "vue-tsc --noEmit && vite build",
+    "type-check": "vue-tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueuse/core": "^12.5.0",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "element-plus": "^2.9.4",
+    "nprogress": "^0.2.0",
+    "pinia": "^3.0.4",
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "vue": "^3.5.13",
+    "vue-i18n": "^10.0.7",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/nprogress": "^0.2.3",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass": "^1.83.4",
+    "typescript": "~5.7.3",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.5",
+    "vite": "^6.0.11",
+    "vue-tsc": "^2.2.0"
+  }
+}

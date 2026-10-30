@@ -1,0 +1,77 @@
+// ============================================================
+// 全局过渡动画
+// ============================================================
+
+// 路由切换淡入 + 轻微位移
+.fade-transform-enter-active,
+.fade-transform-leave-active {
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
+}
+
+.fade-transform-enter-from {
+  opacity: 0;
+  transform: translateX(12px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+// 页面切换动画（主题设置 pageAnimation）
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active,
+.opacitys-enter-active,
+.opacitys-leave-active {
+  transition:
+    transform 0.22s ease,
+    opacity 0.22s ease;
+}
+
+.slide-right-enter-from {
+  transform: translateX(-24px);
+  opacity: 0;
+}
+
+.slide-right-leave-to {
+  transform: translateX(24px);
+  opacity: 0;
+}
+
+.slide-left-enter-from {
+  transform: translateX(24px);
+  opacity: 0;
+}
+
+.slide-left-leave-to {
+  transform: translateX(-24px);
+  opacity: 0;
+}
+
+.opacitys-enter-from,
+.opacitys-leave-to {
+  opacity: 0;
+}
+
+// 通用淡入淡出（抽屉 / 弹层内容）
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// 列表 / 卡片入场
+.el-card,
+.list-fade-enter-active {
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}

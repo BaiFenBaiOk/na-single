@@ -1,0 +1,233 @@
+{
+  "version": "database-evidence-baseline/v1",
+  "sources": [
+    {
+      "source_id": "na-app-mysql",
+      "engine": "mysql",
+      "database": "na_app",
+      "namespaces": [
+        "na_app"
+      ],
+      "include_namespaces": [],
+      "exclude_namespaces": [],
+      "include_tables": [],
+      "exclude_tables": [],
+      "case_semantics": {
+        "identifier_case": "server_lower_case_table_names",
+        "lower_case_table_names": 1
+      },
+      "evidence_version": "database-evidence/v1",
+      "source_snapshot_sha256": "186ff266bafad03dbbbad32d18c5df793cdfee88c386f0afb913becad7d4f0d4",
+      "tables": [
+        {
+          "object_ref": "database://na-app-mysql/na_app/sensitive_word",
+          "table_evidence_sha256": "9610c1b53fbdcbcb9bb5f3f33739d75f9f2fa0dfa84654527c5d810fa94b2906",
+          "component_hashes": {
+            "columns": "3d39a1368b1590b39aa76af2f254c3edd742c45f50d17d229db25b862692fde5",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "ee5adf6362840add6f3784d17e41066581b5e959716d9aa1c13536379a529397",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "1b102deb69a00dbf5bc872b88017fa18e0f321dd354b0feb3124496d82a45109",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_dept",
+          "table_evidence_sha256": "7679694fc7289789929929f32b2b807109353667254c731defc17eb0345280cd",
+          "component_hashes": {
+            "columns": "cf42572e104188b88dd0d79656d5febbcea32296c32b0014f2042839d54f17e9",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "3d8099a61fc8b2cc0d52735bec24e73086a3376ed7438b10b158c366c434763a",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_logs",
+          "table_evidence_sha256": "fa03c8789959e0d8b6011772035305bb8a3ea4e49467d260d9e644b038baf044",
+          "component_hashes": {
+            "columns": "31b88b07af8ff5b94ee52bdde3d9db35c104bc90697e0dac8ceec9a7a1afa708",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "3d8099a61fc8b2cc0d52735bec24e73086a3376ed7438b10b158c366c434763a",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_map_role_menu",
+          "table_evidence_sha256": "91ef936c805d7521645eb4f30213f946e4ccc9c5d72d6fbefd2ee53c47fd1bb4",
+          "component_hashes": {
+            "columns": "84c2fe118eb4a52e325ef56ae885d880e8ee437560d1885ebbc8371312efb4d9",
+            "primary_key": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_map_role_user",
+          "table_evidence_sha256": "9bf4e4e29a18c9caffb26ac31bafe2ff39f0a9adf3d1d043159767e2fc6e84be",
+          "component_hashes": {
+            "columns": "a9b3b67965676e37847939e7898a3ff7b66aad8cb80635dbc1d2c32728fb8147",
+            "primary_key": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_map_tenant_menu",
+          "table_evidence_sha256": "0eb7d9f1148e0c96ba46326209fff3f28f9e7baa2dc9abd4c624495ca46faff2",
+          "component_hashes": {
+            "columns": "a707bc78966feaf2cffd45b744589a2aaad9a07decc6f5e1cf1754cf959e52fc",
+            "primary_key": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_map_user_dept",
+          "table_evidence_sha256": "9c98fcfd899e4adf5c24a5347f938e8f01abcdbb806fd4dac63a3975f7421d33",
+          "component_hashes": {
+            "columns": "01a06980ef1865cdc33381abb11d111e3d681eac185b66bf69e3c2e66ca67fdb",
+            "primary_key": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_map_user_post",
+          "table_evidence_sha256": "8fbc5b8bc14608861d0276f5835aec777560411607dd4c909a6957ce2dc869f6",
+          "component_hashes": {
+            "columns": "689755adc9a95b6c0372d8de0cd309909394627def06a63cee0e29af6238e08f",
+            "primary_key": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_menu",
+          "table_evidence_sha256": "ef0e336b1388a0de138c00c1d1d621faf7ab008ae138ab9d6cac994d9546b062",
+          "component_hashes": {
+            "columns": "0b2405e5f614eb9d2ff8cd6d9cf5c761e17db5efcd46154efbe57572df232f19",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "3d8099a61fc8b2cc0d52735bec24e73086a3376ed7438b10b158c366c434763a",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_post",
+          "table_evidence_sha256": "530ea0c26d21abd2f22185b3eee4d56109b076cce057cb7d658eeb788329f3f6",
+          "component_hashes": {
+            "columns": "42256e853691065d527de4f61c0a0dd060baa3c45a9e0c3bcb45c03a5c0b2ffb",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "95bb76f8656476c44132115744c90ecc7095dbcdc7195b07ba6ae0110ce93b8a",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "629459cf61c50d39bd126362ff59e6aee89fba10d563b28d64d0dbeab164bd06",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_role",
+          "table_evidence_sha256": "76080fb635c1883e41dc20e6a3dcd32434c122bd18896ba36f45bb89e2eb71b3",
+          "component_hashes": {
+            "columns": "b47c550306147af79dce22b4b9a1ea4d8372f87c7cfb476d6874a0264e4dc94f",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "e77a08c70c8f72caf9b69ae155c7b29b9d80f381402eed140c05b033f4327a98",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "e81168175e6163bf489096adf48aca8f437952e7d0ac5899bd26a174d060a29d",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_tenant",
+          "table_evidence_sha256": "8fd0cb965141823bdc5c7f515312d0027d4c87de76b756b7e99033484f5e905a",
+          "component_hashes": {
+            "columns": "b81a323022df97e151835e4351c912b81a12a6a932859d6e3cb76048b136ef79",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "3d8099a61fc8b2cc0d52735bec24e73086a3376ed7438b10b158c366c434763a",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_user",
+          "table_evidence_sha256": "04180e6bcea3cb74abc778beb6ba98d1c4b7e20a02526329f70b8f05c0d36b64",
+          "component_hashes": {
+            "columns": "4548599f8c0fbc48e347c89ba8f9ec5adce6018c0cbcf40af946c51b5dc92a46",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "fd8af1864aa164ec3283cffa399b4088bbdc05b02fdbd7ad9cd7a88ac9d66d8e",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "55cc71293d50425af4ff8d5d191c2e28f82d7281aaa2294170f1680a532fe7c8",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/sys_user_token",
+          "table_evidence_sha256": "41ca9f8fabf3f3b2def97d01076e913284ddf95ded82fc3f9225b72a995c6efc",
+          "component_hashes": {
+            "columns": "af120236a3436ea84b94559cfd06efeaee70017d607709d8a70e51f9c82d27f4",
+            "primary_key": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "f87afb0236f7ec28ff9c90f5346db5c0c61e467b0d39905eb4b169f8ec716081",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/system_config",
+          "table_evidence_sha256": "d54bcec1672e5ad7115c2f699d75517654893040551032944793a3cf48c64ca6",
+          "component_hashes": {
+            "columns": "1173568d917e235a6e6bd672b09feef357559a616b60ae02d7bf395d39ba860d",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "1ba2fac002dede3cc2a5e583def831b75e3e6f3e355bf3be9e23cc6dad12c386",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "263b36b434dd2e6e210d94fe4327c09f820d25cd35a2748760bdbeecad793bc5",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        },
+        {
+          "object_ref": "database://na-app-mysql/na_app/system_form",
+          "table_evidence_sha256": "bb6a6a884a0fe86e505d3705542a1840484734e1c9140b58c264124af51e99af",
+          "component_hashes": {
+            "columns": "f344f62cad05d65f320b6474cc8271e250ae5f509aad5be157d439de5fdbff7c",
+            "primary_key": "a407ef26b2af65b8b6886f127b983f29bd30b8c145a372e68592e1b5211c64eb",
+            "unique_constraints": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "foreign_keys": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "checks": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "indexes": "3d8099a61fc8b2cc0d52735bec24e73086a3376ed7438b10b158c366c434763a",
+            "partition": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+          }
+        }
+      ]
+    }
+  ]
+}

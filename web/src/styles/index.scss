@@ -1,0 +1,9 @@
+// ============================================================
+// 全局样式唯一聚合入口（main.ts 中 import 一次即可）
+// 顺序：reset → EP 覆盖 → 滚动条 → 过渡 → 响应式
+// ============================================================
+@use './reset.scss';
+@use './element-overrides.scss';
+@use './scrollbar.scss';
+@use './transition.scss';
+@use './responsive.scss';

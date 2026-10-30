@@ -1,0 +1,1177 @@
+{
+  "version": 1,
+  "created_at": "2026-09-17T05:59:43Z",
+  "updated_at": "2026-09-18T01:28:29Z",
+  "files": {
+    ".gitattributes": {
+      "role": "index",
+      "sha256": "21fa16a2122e2b0360b47502c577428b645437e08e9e87ffba661f84853cb476",
+      "size": 291,
+      "normalized_sha256": "21fa16a2122e2b0360b47502c577428b645437e08e9e87ffba661f84853cb476"
+    },
+    ".gitignore": {
+      "sha256": "5b90334992056cbda0994375ea03f08ae9abb944436bbe7e058d955384d04df0",
+      "size": 734,
+      "normalized_sha256": "9d482adae6356197236d36b089772c05ddf0efe6b4f0fa3a0d841541844ad6da"
+    },
+    "AGENTS.md": {
+      "role": "index",
+      "sha256": "ddb50101a5be7eb54bde0bdccb2ce15fbac13a0efed1b2851adc248c7a39bcb7",
+      "size": 13258,
+      "normalized_sha256": "ddb50101a5be7eb54bde0bdccb2ce15fbac13a0efed1b2851adc248c7a39bcb7"
+    },
+    "CLAUDE.md": {
+      "sha256": "353a60f7d2714f387cdfcecb7022425c46e8d75c2c7cca5b4f92101aded36ec2",
+      "size": 12024,
+      "normalized_sha256": "353a60f7d2714f387cdfcecb7022425c46e8d75c2c7cca5b4f92101aded36ec2"
+    },
+    "aoci.code.txt": {
+      "sha256": "3ddf350a6cc1b5ce2d3e364bb081c49cc4538a8e49551d57429a096c3fb5d6f9",
+      "size": 36793,
+      "normalized_sha256": "3ddf350a6cc1b5ce2d3e364bb081c49cc4538a8e49551d57429a096c3fb5d6f9"
+    },
+    "aoci.database.txt": {
+      "sha256": "3d1765f8ec792fade1e68be78c34dee1e86e7cfddec28328732a122a23910ecc",
+      "size": 6134,
+      "normalized_sha256": "3d1765f8ec792fade1e68be78c34dee1e86e7cfddec28328732a122a23910ecc"
+    },
+    "aoci.meta.txt": {
+      "role": "index",
+      "sha256": "60ffea0527ae0e1e2b5bf822c119cd3141118cdd33479dec063ee5f9c2114126",
+      "size": 1900,
+      "normalized_sha256": "60ffea0527ae0e1e2b5bf822c119cd3141118cdd33479dec063ee5f9c2114126"
+    },
+    "aoci.txt": {
+      "role": "index",
+      "sha256": "25e8ed70dda07a091ccd9c77f0ca50e715e7d4c0b6308c08b2d0d47be6444ddc",
+      "size": 397,
+      "normalized_sha256": "25e8ed70dda07a091ccd9c77f0ca50e715e7d4c0b6308c08b2d0d47be6444ddc"
+    },
+    "doc/na_app.sql": {
+      "role": "index",
+      "sha256": "21797f93d63969ee086d0130794ca08ae89ad03ef9eb66988ff055b7f79b1f41",
+      "size": 35795,
+      "normalized_sha256": "ae604fd0103e34b654d7b13af5356c81ef10d462dcbc306f0ad72385689b9a7e"
+    },
+    "na-common/pom.xml": {
+      "role": "index",
+      "sha256": "716a9f0a2546068dd471d22f5c1f042bc10d9d94e5c1d24e39128b85b4803879",
+      "size": 4937,
+      "normalized_sha256": "2975791f5918de05cc39d87dc638a73af4adb3afb24532f621f0e7b418e09019"
+    },
+    "na-common/src/main/java/com/na/common/constant/CacheConstInterFace.java": {
+      "role": "index",
+      "sha256": "25cb3aec0ea06c0ff9bcda0c19d2bfeec727dd2e36a53c44c0e7a5d7f8d545fe",
+      "size": 885,
+      "normalized_sha256": "be4d3848238644d6b82ad6fc72c3ec423e9320029e379d2d1a27b819d15ceac8"
+    },
+    "na-common/src/main/java/com/na/common/constant/CacheSysConfigConst.java": {
+      "role": "index",
+      "sha256": "b95b0d3966c1c74b6ad098548b6bba89b3cef7edcdb47fae0d33e7b302253bcd",
+      "size": 251,
+      "normalized_sha256": "688787379197f0a275e7f8b8e28ca0096098aac23a0ecb1a06c0ea6619bc1aa9"
+    },
+    "na-common/src/main/java/com/na/common/constant/CommonConst.java": {
+      "role": "index",
+      "sha256": "013cc03c8496d08388b7b0f37ef1f9673d486c80af9fce264baba552b5407aa3",
+      "size": 262,
+      "normalized_sha256": "614690a9ce2fbae07c16bf57a0413bd02c45e3f31f28be951b0229559ba1c9e6"
+    },
+    "na-common/src/main/java/com/na/common/dto/MyAuthDto.java": {
+      "role": "index",
+      "sha256": "019733aa9a9a37768523e26e30819baa5bf1206aa78163d7bd2d081057e74d92",
+      "size": 289,
+      "normalized_sha256": "85a111b1785ca0008726c425e8d2a8619f20e3b46b61f33a237875006be20118"
+    },
+    "na-common/src/main/java/com/na/common/dto/UserDto.java": {
+      "role": "index",
+      "sha256": "855a99f9d7b4092903ad234815ba4cde5b95d5a615bf71700ee43faf9025a871",
+      "size": 365,
+      "normalized_sha256": "0a450485aff102336db8f3bed0d5b3352b2621262adf6f64c981bb4a64cea26a"
+    },
+    "na-common/src/main/java/com/na/common/enums/MyStatus.java": {
+      "role": "index",
+      "sha256": "64575d803e501b385a0ea55842b369423e0d3679d9c2790b5a26a460b2a07012",
+      "size": 1979,
+      "normalized_sha256": "8010826714ca7a3d876bb97b8ddc71a1b42340f8d5c415a36bc3cd7e54e321b5"
+    },
+    "na-common/src/main/java/com/na/common/enums/SexEnum.java": {
+      "role": "index",
+      "sha256": "0aadeab672944a5cc45e09f68d0185c907e31db89af5f5c99b3b10c55c319cfe",
+      "size": 314,
+      "normalized_sha256": "c8897bb9b8493fcab7e2adb41c29b680d861e960e857ac3faedb339c2e2ea994"
+    },
+    "na-common/src/main/java/com/na/common/result/R.java": {
+      "role": "index",
+      "sha256": "a84afc8da65bbdab81846da4fb4b46305fbc00dd5aff212f88bf75b89fb5bfe3",
+      "size": 651,
+      "normalized_sha256": "a84afc8da65bbdab81846da4fb4b46305fbc00dd5aff212f88bf75b89fb5bfe3"
+    },
+    "na-common/src/main/java/com/na/common/utils/RequestParamsValidUtil.java": {
+      "role": "index",
+      "sha256": "68f3c4ceb892f3f8adb5d190fa576452d4e3df401a5439fd2a066985594c3bb7",
+      "size": 3221,
+      "normalized_sha256": "ee1d72e685daf16bef14fed805393c9fc24865f14db96176ca24b6750f3bc528"
+    },
+    "na-common/src/main/java/com/na/common/utils/TokenUtil.java": {
+      "role": "index",
+      "sha256": "063a6eaf2903a8f418a0583b9eb9ca2756eec4eee2e65f546e410d0218f27c26",
+      "size": 6462,
+      "normalized_sha256": "634d247100ef5da8b3590a9f05b40a283be92ae2c1fdb6fa8a64aab5a9e30e8c"
+    },
+    "na-core/pom.xml": {
+      "role": "index",
+      "sha256": "0b6738d8051ed8fc33606908170e0e97971d1e41945dfadd1a88f5f4254c8149",
+      "size": 1937,
+      "normalized_sha256": "0b6738d8051ed8fc33606908170e0e97971d1e41945dfadd1a88f5f4254c8149"
+    },
+    "na-core/src/main/java/com/na/core/constant/Consts.java": {
+      "role": "index",
+      "sha256": "cb342ab9d4d394edcf11093fa85cc185880501da310ebf564dbf12fc25b56e16",
+      "size": 276,
+      "normalized_sha256": "cb342ab9d4d394edcf11093fa85cc185880501da310ebf564dbf12fc25b56e16"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysMapRoleMenuMapper.java": {
+      "role": "index",
+      "sha256": "56b435cd573b11ea4dd286b7d8c7b339d9c57b168ca714dbc3a083e8f12a0a39",
+      "size": 1389,
+      "normalized_sha256": "56b435cd573b11ea4dd286b7d8c7b339d9c57b168ca714dbc3a083e8f12a0a39"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysMapRoleUserMapper.java": {
+      "role": "index",
+      "sha256": "1a0b29925387a49bf98e84e242c72d4b4432ac76c12db3ba78da75e353163d01",
+      "size": 693,
+      "normalized_sha256": "1a0b29925387a49bf98e84e242c72d4b4432ac76c12db3ba78da75e353163d01"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysMapTenantMenuMapper.java": {
+      "role": "index",
+      "sha256": "2a1ff5de396b9375069be00fed70603d78d3ac70e53c201bb81ba345f17d89de",
+      "size": 1005,
+      "normalized_sha256": "2a1ff5de396b9375069be00fed70603d78d3ac70e53c201bb81ba345f17d89de"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysMenuMapper.java": {
+      "role": "index",
+      "sha256": "bf7806701e315d67d7c9778c995b0825653adc2b0c5c0ed56403725a557542c1",
+      "size": 1348,
+      "normalized_sha256": "bf7806701e315d67d7c9778c995b0825653adc2b0c5c0ed56403725a557542c1"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysRoleMapper.java": {
+      "role": "index",
+      "sha256": "a1ca176d62bd1f8256396e92196f6066d46de55d897d19588bcbc25fb9701fee",
+      "size": 1022,
+      "normalized_sha256": "a1ca176d62bd1f8256396e92196f6066d46de55d897d19588bcbc25fb9701fee"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysTenantMapper.java": {
+      "role": "index",
+      "sha256": "8ab9af26a898c7ce5acb918f5d44ffb881b90732b7114158c4a60c0f8a8d7ea9",
+      "size": 782,
+      "normalized_sha256": "8ab9af26a898c7ce5acb918f5d44ffb881b90732b7114158c4a60c0f8a8d7ea9"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISysUserMapper.java": {
+      "role": "index",
+      "sha256": "67bf5123e64224b206bf4b065ef6c0184e681f4574a09cf4f7a6806bd1a88b4f",
+      "size": 806,
+      "normalized_sha256": "67bf5123e64224b206bf4b065ef6c0184e681f4574a09cf4f7a6806bd1a88b4f"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISystemConfigMapper.java": {
+      "role": "index",
+      "sha256": "b32448a3d495bdc76952dba70aea429af53688477ca4b955e80edea48966d911",
+      "size": 840,
+      "normalized_sha256": "69b65ad7af6310dd39d95d5dc342fbdba3bc8391e7aac2d58f98f7f5dc97771c"
+    },
+    "na-core/src/main/java/com/na/core/mapper/ISystemFormMapper.java": {
+      "role": "index",
+      "sha256": "01147ddbcb4063e36cd21192c009adb57bbcc1eb3ae722cc8c3b984bf153da09",
+      "size": 747,
+      "normalized_sha256": "7056475ee36330b5c522d3547fdd0cb936511f666a2353fc994b7837e16a6c39"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysMapRoleMenuRepo.java": {
+      "role": "index",
+      "sha256": "3e1b7388bed9b06c38ed412fc13672c2bc1e1fa015a196c07d3bff9ff3f6fde0",
+      "size": 1662,
+      "normalized_sha256": "3e1b7388bed9b06c38ed412fc13672c2bc1e1fa015a196c07d3bff9ff3f6fde0"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysMapRoleUserRepo.java": {
+      "role": "index",
+      "sha256": "e0f498310e54c00126da577cea958642dc0a53a844c8f45ec29888ed56578435",
+      "size": 1039,
+      "normalized_sha256": "e0f498310e54c00126da577cea958642dc0a53a844c8f45ec29888ed56578435"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysMapTenantMenuRepo.java": {
+      "role": "index",
+      "sha256": "e16a4d7d370563456aef3cdcea2606f0caad851de06a2b13f3cf078eeba7cb6d",
+      "size": 1420,
+      "normalized_sha256": "e16a4d7d370563456aef3cdcea2606f0caad851de06a2b13f3cf078eeba7cb6d"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysMenuRepo.java": {
+      "role": "index",
+      "sha256": "bb0dc907a4c5518b4228e428fbcd5fe453ffaa92fb027ae8a63ab3167709493b",
+      "size": 1534,
+      "normalized_sha256": "bb0dc907a4c5518b4228e428fbcd5fe453ffaa92fb027ae8a63ab3167709493b"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysRoleRepo.java": {
+      "role": "index",
+      "sha256": "4d0cc28e760b3f196bf10a9da3594a28176aae52e9a96c188782b66c8febd691",
+      "size": 1282,
+      "normalized_sha256": "4d0cc28e760b3f196bf10a9da3594a28176aae52e9a96c188782b66c8febd691"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysTenantRepo.java": {
+      "role": "index",
+      "sha256": "d223cb72300e4ef8ef2bcdef26fd6ad649c692f310ff0fd2172efd0227972bf8",
+      "size": 957,
+      "normalized_sha256": "d223cb72300e4ef8ef2bcdef26fd6ad649c692f310ff0fd2172efd0227972bf8"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISysUserRepo.java": {
+      "role": "index",
+      "sha256": "19653f74f8b1253399ede4fadda7e62eb7cbdc247a57028b3f17cc4167862a26",
+      "size": 993,
+      "normalized_sha256": "19653f74f8b1253399ede4fadda7e62eb7cbdc247a57028b3f17cc4167862a26"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISystemConfigRepo.java": {
+      "role": "index",
+      "sha256": "9d37c5772952883afa537bfd1ae47573ff59db493b34603d54a8af7e646d0d2b",
+      "size": 622,
+      "normalized_sha256": "811bb5c6106951eb1f26508bca7d9d95a838cd3f094589554571bd5ceb46122b"
+    },
+    "na-core/src/main/java/com/na/core/repo/ISystemFormRepo.java": {
+      "role": "index",
+      "sha256": "6adf8fe62db36c0164546cffc369b7984735d2be2138f629389e6f0330935b21",
+      "size": 488,
+      "normalized_sha256": "fc7855343634210f39be537ecca8b8a689f91312d19df82d1b201ec6418f6743"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysMapRoleMenuRepoImpl.java": {
+      "role": "index",
+      "sha256": "5ba93d2b2b20d1d218eb898a58f65cc6895c4f224456693b08a4eeee24bf8623",
+      "size": 3675,
+      "normalized_sha256": "5ba93d2b2b20d1d218eb898a58f65cc6895c4f224456693b08a4eeee24bf8623"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysMapRoleUserRepoImpl.java": {
+      "role": "index",
+      "sha256": "02276a92d61804046059dd36d42af5f2ad2d7382c67b036693521e8775ed7664",
+      "size": 3030,
+      "normalized_sha256": "02276a92d61804046059dd36d42af5f2ad2d7382c67b036693521e8775ed7664"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysMapTenantMenuRepoImpl.java": {
+      "role": "index",
+      "sha256": "4322871e9a169d942b0be8038ae5f032de690c948287ca6f0b12a6065d01d542",
+      "size": 3473,
+      "normalized_sha256": "4322871e9a169d942b0be8038ae5f032de690c948287ca6f0b12a6065d01d542"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysMenuRepoImpl.java": {
+      "role": "index",
+      "sha256": "b04d05c8b48e191aa5f0b12cc5c5ce79f0267fd12618c92f6587c9f89ebcf9b4",
+      "size": 4571,
+      "normalized_sha256": "b04d05c8b48e191aa5f0b12cc5c5ce79f0267fd12618c92f6587c9f89ebcf9b4"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysRoleRepoImpl.java": {
+      "role": "index",
+      "sha256": "f7f1a5c3500ebe74497c1052bc04da885a8da41f1e83c969fe17622ed0dbdcf3",
+      "size": 3590,
+      "normalized_sha256": "f7f1a5c3500ebe74497c1052bc04da885a8da41f1e83c969fe17622ed0dbdcf3"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysTenantRepoImpl.java": {
+      "role": "index",
+      "sha256": "551a756e215f639bc13cf3ec37480a60d4091292a912532c180f656873c6b169",
+      "size": 3201,
+      "normalized_sha256": "551a756e215f639bc13cf3ec37480a60d4091292a912532c180f656873c6b169"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SysUserRepoImpl.java": {
+      "role": "index",
+      "sha256": "cabf1c91bdc8a29473a37f8dcbfac98c02e7655ff51d9f5675182f52bac440a5",
+      "size": 3419,
+      "normalized_sha256": "cabf1c91bdc8a29473a37f8dcbfac98c02e7655ff51d9f5675182f52bac440a5"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SystemConfigRepoImpl.java": {
+      "role": "index",
+      "sha256": "d9225e688540042db2f644d37884b84aa6343d27f55fbaacaa96d387ad4bbe91",
+      "size": 2904,
+      "normalized_sha256": "0072e8410f51e7886cf4da27d51f34176ed6c5b0bef62221d850c603dfdfab2a"
+    },
+    "na-core/src/main/java/com/na/core/repo/impl/SystemFormRepoImpl.java": {
+      "role": "index",
+      "sha256": "cc650591f57bae461f3d66d306d178858c525aee7667db8736f264cf127f07c7",
+      "size": 2258,
+      "normalized_sha256": "c50c97d2ce78fd0e8749b389a77336bdcc548e0cdd49fbb6493bf48832fc69c9"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysMapRoleMenuMapper.xml": {
+      "sha256": "bcbb8c6b86718ba15ac25e7da118f8aad33166646885d2009f1bc180b31bdaa0",
+      "size": 1751,
+      "normalized_sha256": "bcbb8c6b86718ba15ac25e7da118f8aad33166646885d2009f1bc180b31bdaa0"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysMapRoleUserMapper.xml": {
+      "role": "index",
+      "sha256": "8ca03f231a5566f5853667674f118b427ad76dc868739892d82bc598d14eee1d",
+      "size": 434,
+      "normalized_sha256": "8ca03f231a5566f5853667674f118b427ad76dc868739892d82bc598d14eee1d"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysMapTenantMenuMapper.xml": {
+      "role": "index",
+      "sha256": "2d57ef69c3dd71821ec6dc3d944cf05ffb97abbce010da0c5efbf4be37fd6cc7",
+      "size": 1051,
+      "normalized_sha256": "2d57ef69c3dd71821ec6dc3d944cf05ffb97abbce010da0c5efbf4be37fd6cc7"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysMenuMapper.xml": {
+      "role": "index",
+      "sha256": "e6659f6f577ed27174ade3605ab09e5b41514af3a15348c8a3b17012220def13",
+      "size": 4972,
+      "normalized_sha256": "e6659f6f577ed27174ade3605ab09e5b41514af3a15348c8a3b17012220def13"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysRoleMapper.xml": {
+      "role": "index",
+      "sha256": "e0044da9c009cf2c43f119852f80b1be284c7ea3bd7ced3d944a3b607b10bb0a",
+      "size": 1836,
+      "normalized_sha256": "e0044da9c009cf2c43f119852f80b1be284c7ea3bd7ced3d944a3b607b10bb0a"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysTenantMapper.xml": {
+      "role": "index",
+      "sha256": "cf47400a6c13359a25c762d57618e75a170480567bd81d51885ff597ef314049",
+      "size": 1502,
+      "normalized_sha256": "cf47400a6c13359a25c762d57618e75a170480567bd81d51885ff597ef314049"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISysUserMapper.xml": {
+      "sha256": "9563be46efc8b6e00efdab66280e3a14ba924825ab0b993b2a652cc6ec37771e",
+      "size": 2205,
+      "normalized_sha256": "9563be46efc8b6e00efdab66280e3a14ba924825ab0b993b2a652cc6ec37771e"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISystemConfigMapper.xml": {
+      "role": "index",
+      "sha256": "15fee82d1e1adc5cf66f3eb87472f632e21483de2ba4183f3c34b60c08c203fe",
+      "size": 1440,
+      "normalized_sha256": "5db00727f80b542f7280e7835d6a609aef79e95876107a5880a4ec295a354800"
+    },
+    "na-core/src/main/resources/mapper/mysql/ISystemFormMapper.xml": {
+      "role": "index",
+      "sha256": "179dd9e6a43b10d085ca2f21c0a2c7453f6a6e96666674e6cd4ac9a2cb6aef56",
+      "size": 781,
+      "normalized_sha256": "c4d9cdf55f3b4839be99336952976e0dd21f754cc100d0a65ec6ab29590700c5"
+    },
+    "na-entity/pom.xml": {
+      "role": "index",
+      "sha256": "8237e853d611a72fa4834b459b004b41dfd0df48add1963b586151b2e972b62e",
+      "size": 2269,
+      "normalized_sha256": "8237e853d611a72fa4834b459b004b41dfd0df48add1963b586151b2e972b62e"
+    },
+    "na-entity/src/main/java/com/na/entity/SysMapRoleMenuEntity.java": {
+      "role": "index",
+      "sha256": "048694dc7e8a9acb6060ed32a5d633751714a67dab7955d3ab6ce855266131f3",
+      "size": 347,
+      "normalized_sha256": "048694dc7e8a9acb6060ed32a5d633751714a67dab7955d3ab6ce855266131f3"
+    },
+    "na-entity/src/main/java/com/na/entity/SysMapRoleUserEntity.java": {
+      "role": "index",
+      "sha256": "0f26fff2dfbe9812033d64e3cff18a9c5aa74c35fc1b351e8f17b3e520f924e3",
+      "size": 363,
+      "normalized_sha256": "0f26fff2dfbe9812033d64e3cff18a9c5aa74c35fc1b351e8f17b3e520f924e3"
+    },
+    "na-entity/src/main/java/com/na/entity/SysMapTenantMenuEntity.java": {
+      "role": "index",
+      "sha256": "7f1d578b2c587d0118e907c0c52e2047949bd44e57b72344daff01045c239323",
+      "size": 377,
+      "normalized_sha256": "7f1d578b2c587d0118e907c0c52e2047949bd44e57b72344daff01045c239323"
+    },
+    "na-entity/src/main/java/com/na/entity/SysMenuEntity.java": {
+      "sha256": "e42f21f889ea9564ff6fe1f41a3f9ca8086b19c88b64c8a22a7c672f32c3e0ac",
+      "size": 1659,
+      "normalized_sha256": "e42f21f889ea9564ff6fe1f41a3f9ca8086b19c88b64c8a22a7c672f32c3e0ac"
+    },
+    "na-entity/src/main/java/com/na/entity/SysRoleEntity.java": {
+      "sha256": "7631b9020859a4f83ba0f8fe744f6289952b7eebe7db9309348ef509198df85a",
+      "size": 1159,
+      "normalized_sha256": "7631b9020859a4f83ba0f8fe744f6289952b7eebe7db9309348ef509198df85a"
+    },
+    "na-entity/src/main/java/com/na/entity/SysTenantEntity.java": {
+      "sha256": "6b7dc380ff117a7b0fbaa615ec4a273f150eff00f0073964540348d16e79e8da",
+      "size": 1156,
+      "normalized_sha256": "6b7dc380ff117a7b0fbaa615ec4a273f150eff00f0073964540348d16e79e8da"
+    },
+    "na-entity/src/main/java/com/na/entity/SysUserEntity.java": {
+      "sha256": "30cf68e63e77dd655695bb05a3f8f8d8ef109801b951b9bcb876a4e840e7dfdc",
+      "size": 1708,
+      "normalized_sha256": "30cf68e63e77dd655695bb05a3f8f8d8ef109801b951b9bcb876a4e840e7dfdc"
+    },
+    "na-entity/src/main/java/com/na/entity/SystemConfigEntity.java": {
+      "role": "index",
+      "sha256": "becd57b7c730ba1a869e5df6ce6c50c0ff47180574ef4c296fff05e2fbadea84",
+      "size": 536,
+      "normalized_sha256": "60821a3dc50f5386466ee344eaf33aa0e73b0f0de4d86fac470f17d37df2e8a9"
+    },
+    "na-entity/src/main/java/com/na/entity/SystemFormEntity.java": {
+      "role": "index",
+      "sha256": "4ce9a351dafabafd2af032bc97be6cddb48e2d384ebeea4b73ba756c9d2a791c",
+      "size": 420,
+      "normalized_sha256": "d684ce9c7a7d2fa3e0aa8a5ce3f62667ec82db1b55470b8e072abbb9e4fa9095"
+    },
+    "na-entity/src/main/java/com/na/model/SysMapRoleMenuModel.java": {
+      "role": "index",
+      "sha256": "f71bb3d8bff69113ed13d61db2e2469164d89294e563c3e65317fbb01a11ddb5",
+      "size": 342,
+      "normalized_sha256": "f71bb3d8bff69113ed13d61db2e2469164d89294e563c3e65317fbb01a11ddb5"
+    },
+    "na-entity/src/main/java/com/na/model/SysMapRoleUserModel.java": {
+      "role": "index",
+      "sha256": "7135c7a4fc02ae098980159545eb939f052f6b8305305fa3a2524412af4aeeb6",
+      "size": 358,
+      "normalized_sha256": "7135c7a4fc02ae098980159545eb939f052f6b8305305fa3a2524412af4aeeb6"
+    },
+    "na-entity/src/main/java/com/na/model/SysMapTenantMenuModel.java": {
+      "role": "index",
+      "sha256": "30ce53cff3f85003fcc4b9040c7e4fe6e301668f2f843aa7f70ddd7b408b50f3",
+      "size": 370,
+      "normalized_sha256": "30ce53cff3f85003fcc4b9040c7e4fe6e301668f2f843aa7f70ddd7b408b50f3"
+    },
+    "na-entity/src/main/java/com/na/model/SysMenuModel.java": {
+      "sha256": "1f93386ac5baa3936b22a71e8df081dcfaf81e35eefe8b9e334b09cc08c3e22e",
+      "size": 1536,
+      "normalized_sha256": "1f93386ac5baa3936b22a71e8df081dcfaf81e35eefe8b9e334b09cc08c3e22e"
+    },
+    "na-entity/src/main/java/com/na/model/SysRoleModel.java": {
+      "sha256": "688172d0a6b093ec507df9fdeaf798fcfe3c163084a8c139f44a7d0fa44aebe6",
+      "size": 1036,
+      "normalized_sha256": "688172d0a6b093ec507df9fdeaf798fcfe3c163084a8c139f44a7d0fa44aebe6"
+    },
+    "na-entity/src/main/java/com/na/model/SysTenantModel.java": {
+      "sha256": "c5d8955a12b3b66af3568dcb004b145b7b13ffd4c06dfe73b4d1960570a97193",
+      "size": 1031,
+      "normalized_sha256": "c5d8955a12b3b66af3568dcb004b145b7b13ffd4c06dfe73b4d1960570a97193"
+    },
+    "na-entity/src/main/java/com/na/model/SysUserModel.java": {
+      "sha256": "954a35146c02b5593ec31db54c87e648023858453e65bd23595e4937a00304f3",
+      "size": 1467,
+      "normalized_sha256": "954a35146c02b5593ec31db54c87e648023858453e65bd23595e4937a00304f3"
+    },
+    "na-entity/src/main/java/com/na/model/SystemConfigModel.java": {
+      "role": "index",
+      "sha256": "7a663e95e2da716c476a57f124eaf695dc2ca6c0dabcd5d2a97da7778e923ffe",
+      "size": 450,
+      "normalized_sha256": "07fb81262b448f38ebee865a01a407cf71dadedfcfc96c6e90ce53697179274a"
+    },
+    "na-entity/src/main/java/com/na/model/SystemFormModel.java": {
+      "role": "index",
+      "sha256": "85ae4cc30e7e5c4c7f29df869496cbe645873e25dcdefab9b5d58f41b3b711cb",
+      "size": 336,
+      "normalized_sha256": "256aa0700a5794ae1f3a84292fc68b6ebe1e035c74ecf8146d712008e75f150a"
+    },
+    "na-entity/src/main/java/com/na/params/QueryMenuParams.java": {
+      "role": "index",
+      "sha256": "ad92d63e980077f340b2329c74284c1a43925304974067136fcff0dcf824bf96",
+      "size": 526,
+      "normalized_sha256": "d02dee396e5a16a3374d601147a648c9edc096059a3ea86ad017899e43c02a11"
+    },
+    "na-entity/src/main/java/com/na/params/QuerySysFormPagingParams.java": {
+      "role": "index",
+      "sha256": "c325bc9742b7939756af22e4261c5a73a92a8b2df01adb2d5d402b3f5a811aa3",
+      "size": 396,
+      "normalized_sha256": "77c8abbb620e85da2719a7d2fb772fbd2d8cd15e51f1e697db70e3545525ae4f"
+    },
+    "na-entity/src/main/java/com/na/params/QueryTenantMenuParams.java": {
+      "role": "index",
+      "sha256": "77870d29282aaabad6703986448a143a1e4913de71773e7a85926632306864f7",
+      "size": 449,
+      "normalized_sha256": "7123faa065fe84ba83c5a0668c40151c7b6f18d0d743193eb7ae4a7122ea9e1b"
+    },
+    "na-entity/src/main/java/com/na/params/SysMapRoleMenuParams.java": {
+      "role": "index",
+      "sha256": "910908a2d2d56684159c70c4e97b9fdd1f11605d7ca10b67425564b742714251",
+      "size": 409,
+      "normalized_sha256": "910908a2d2d56684159c70c4e97b9fdd1f11605d7ca10b67425564b742714251"
+    },
+    "na-entity/src/main/java/com/na/params/SysMapRoleUserParams.java": {
+      "role": "index",
+      "sha256": "85789f29df7196a81f43f944919d14fd0aa44cc2fbb6277725cf4639fef47be5",
+      "size": 425,
+      "normalized_sha256": "85789f29df7196a81f43f944919d14fd0aa44cc2fbb6277725cf4639fef47be5"
+    },
+    "na-entity/src/main/java/com/na/params/SysMapTenantMenuParams.java": {
+      "role": "index",
+      "sha256": "4ff4780bec21aaa494858d8cdb254e876f1b1477963460ba291ceed43bc06814",
+      "size": 437,
+      "normalized_sha256": "4ff4780bec21aaa494858d8cdb254e876f1b1477963460ba291ceed43bc06814"
+    },
+    "na-entity/src/main/java/com/na/params/SysMenuParams.java": {
+      "sha256": "2b5a4738ae1d3adcb146eb532143419b125844424755068a14e45a8ab68b0574",
+      "size": 1603,
+      "normalized_sha256": "2b5a4738ae1d3adcb146eb532143419b125844424755068a14e45a8ab68b0574"
+    },
+    "na-entity/src/main/java/com/na/params/SysRoleParams.java": {
+      "sha256": "7c78990d0ab0a7511d17950c921b14fcfa1a9fc7f98eeb34cea3e6d7d364a08e",
+      "size": 1103,
+      "normalized_sha256": "7c78990d0ab0a7511d17950c921b14fcfa1a9fc7f98eeb34cea3e6d7d364a08e"
+    },
+    "na-entity/src/main/java/com/na/params/SysTenantParams.java": {
+      "sha256": "ebf92b705f873918843fcfda430ac0ca8e014892c5d7b0c5ed07e041ccc970a8",
+      "size": 1154,
+      "normalized_sha256": "ebf92b705f873918843fcfda430ac0ca8e014892c5d7b0c5ed07e041ccc970a8"
+    },
+    "na-entity/src/main/java/com/na/params/SysUserParams.java": {
+      "sha256": "fddd853fe4051f897fac784a5ccc4fadd1dab86270b5e80a5137e3111f9d6839",
+      "size": 1345,
+      "normalized_sha256": "fddd853fe4051f897fac784a5ccc4fadd1dab86270b5e80a5137e3111f9d6839"
+    },
+    "na-gateway/pom.xml": {
+      "role": "index",
+      "sha256": "218bc77a934e35d1a83023dd74ad051c23ecc2e8a0297a8cba90932a85ca6315",
+      "size": 4358,
+      "normalized_sha256": "218bc77a934e35d1a83023dd74ad051c23ecc2e8a0297a8cba90932a85ca6315"
+    },
+    "na-gateway/src/main/java/com/na/gateway/GatewayApplication.java": {
+      "role": "index",
+      "sha256": "2bd1bcbaad9011bcb552d70015dc2b4e90b48876feb132ceb3496d5a29f3c570",
+      "size": 1451,
+      "normalized_sha256": "2bd1bcbaad9011bcb552d70015dc2b4e90b48876feb132ceb3496d5a29f3c570"
+    },
+    "na-gateway/src/main/java/com/na/gateway/filter/GlobalFilterHandle.java": {
+      "role": "index",
+      "sha256": "f4c98f51e1c2d6bd26e05bc1cd56e2e181b8dda8c0f59990d5438d1adba39718",
+      "size": 3550,
+      "normalized_sha256": "2fcc69f832f5e313e980df33230c8affbb1259aff750f57ee9f2b32439c7202b"
+    },
+    "na-gateway/src/main/java/com/na/gateway/utils/IpUtil.java": {
+      "role": "index",
+      "sha256": "4f8cf501ecd17170d8a58cb440c8c5c7893a81d7777f962ea4d7af5f7090ef55",
+      "size": 2608,
+      "normalized_sha256": "0f82e88690b225020986c4bdde31c1dbb9eaf2dbd6599ee80b384c6ad22b68ff"
+    },
+    "na-gateway/src/main/resources/bootstrap-dev.yaml": {
+      "role": "index",
+      "sha256": "af1bffabd649aeac0250de6438f4052d13fa5f9dbdd8345f76ed00346db6d5de",
+      "size": 679,
+      "normalized_sha256": "ca616ca4af41b9139158d03a6866e80060addf272aa6d83f8d851bdb2a88541d"
+    },
+    "na-gateway/src/main/resources/bootstrap-prod.yaml": {
+      "role": "index",
+      "sha256": "06c9dfa7c6bfb38e6f79abdc2a6f53076d435ef0261fe00f32c3cca39bf6eb67",
+      "size": 691,
+      "normalized_sha256": "2cbfa39083c1b12d5658a46163ac76d399d24121fe634951d1f587ead4968171"
+    },
+    "na-gateway/src/main/resources/bootstrap.yaml": {
+      "role": "index",
+      "sha256": "86ccb75bbf28ad7b632d2b5167c7e5f6d2237840c235b9ce2cf2ec3e63cba9b9",
+      "size": 3469,
+      "normalized_sha256": "6c615466deff612cbb305f1b575359e4066f1ab6bc7a485f0c8c2cb1fb0ca9a6"
+    },
+    "na-gateway/src/main/resources/com/na/log/config/na-defaults.xml": {
+      "role": "index",
+      "sha256": "3ee9c308f4d880d48bf786a70bf7ea6030b92e2fb1c94a511a8a13904834e84f",
+      "size": 12202,
+      "normalized_sha256": "5552aedd508f151809fe3666885456ed2977aaf4f5146063e4f8af9168eb1318"
+    },
+    "na-gateway/src/main/resources/logback-spring.xml": {
+      "role": "index",
+      "sha256": "929f3fe37265f7d9a83d9041d2f71df72d83c2e5b21c613252eb3875308f4102",
+      "size": 701,
+      "normalized_sha256": "9637bb9b530437a10765579d3d5e76f17f27bab8df72792d547912d94cdaacfe"
+    },
+    "na-parent/pom.xml": {
+      "role": "index",
+      "sha256": "22b42de7e3048d253d8050f982d0f90f3e87bac1d888fbe56b4b5e1b28b49bc8",
+      "size": 15112,
+      "normalized_sha256": "4e8efc665256338bba5ccc3407b91c679430bd486bb2bc7a8b34b1ed1aae3d47"
+    },
+    "na-upms/pom.xml": {
+      "role": "index",
+      "sha256": "6006ff2f7c37dae2cad139ac4dbb0f4a66276b7246e6e54122722c48ef4ff352",
+      "size": 11522,
+      "normalized_sha256": "50a8e495c8d022dccb42166d81722347cfd32a53c8fd2b9666c905bd6358fc8c"
+    },
+    "na-upms/src/main/java/com/na/admin/AdminApplication.java": {
+      "sha256": "87e4b6921de5789243da54890cc126ad876fb5a3b2ad44ec0fcee2fb7fc32d09",
+      "size": 2523,
+      "normalized_sha256": "87e4b6921de5789243da54890cc126ad876fb5a3b2ad44ec0fcee2fb7fc32d09"
+    },
+    "na-upms/src/main/java/com/na/admin/config/MySqlTimeConfig.java": {
+      "role": "index",
+      "sha256": "b1cf91ec6aaaa736fc5a889524625ddc32735749cd4854a92546043067d28eea",
+      "size": 1895,
+      "normalized_sha256": "fc88c35a3ecf40f6a451fd50a9f4eca48a6642375005c67f18d128b2ad9c120e"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/CaptchaController.java": {
+      "role": "index",
+      "sha256": "13e32e9d7ad09c324f6ff3152a0b99dcdc42543a11c1b2437e58f7f6b0a97e57",
+      "size": 2218,
+      "normalized_sha256": "ebec13ef105f60bcb4a9e0fb0cd7691f6261c23732098ea6a68a9131a6fa0535"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/LoginController.java": {
+      "role": "index",
+      "sha256": "41e5cde26f893aa0085fd8b337b4a8b14a4c0890df36aab5887cc357c9fd8e38",
+      "size": 1406,
+      "normalized_sha256": "33032777c48c8f13d6978ba13080d51f33d5bbacbf2c900848d2b4095327ce93"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/SysMenuController.java": {
+      "role": "index",
+      "sha256": "04bb0c0b085b4cb580450f44225811bb2945265c001573f33c5fece096da3305",
+      "size": 3446,
+      "normalized_sha256": "04bb0c0b085b4cb580450f44225811bb2945265c001573f33c5fece096da3305"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/SysRoleController.java": {
+      "role": "index",
+      "sha256": "9813a7a13e01412eed7db6ca4d5f1dc1587c7a5eef152eed8a4560948bbf3480",
+      "size": 1708,
+      "normalized_sha256": "9813a7a13e01412eed7db6ca4d5f1dc1587c7a5eef152eed8a4560948bbf3480"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/SysTenantController.java": {
+      "sha256": "d8788ce477de48f15d84fdc062136550b033a3ba64e26f5c7baaa2cb3e775c46",
+      "size": 2136,
+      "normalized_sha256": "d8788ce477de48f15d84fdc062136550b033a3ba64e26f5c7baaa2cb3e775c46"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/SysUserController.java": {
+      "role": "index",
+      "sha256": "0d66869b556d731e4a88edc0b926be18bbb4a0da94b3402e5ed78b96acb3ba4e",
+      "size": 3579,
+      "normalized_sha256": "0d66869b556d731e4a88edc0b926be18bbb4a0da94b3402e5ed78b96acb3ba4e"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/SystemConfigController.java": {
+      "role": "index",
+      "sha256": "0b32aa5b90dc6dcf4f377f56d36669b99b84587540a86cff16963377dfa893ec",
+      "size": 3073,
+      "normalized_sha256": "f88d477c76e31949468ec771275d660b813f4304c4b363805c89e8addf881a7c"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/SystemInfoController.java": {
+      "role": "index",
+      "sha256": "76b27bcdeadaceb30c6aaae7b93f4face1e29a547335b2dbecc74b9804956555",
+      "size": 2562,
+      "normalized_sha256": "76b27bcdeadaceb30c6aaae7b93f4face1e29a547335b2dbecc74b9804956555"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/ReqLoginVO.java": {
+      "role": "index",
+      "sha256": "15709175c2454a00eaa2227142dffbb5e81676998fc46acc0258c254452a2a60",
+      "size": 960,
+      "normalized_sha256": "0e9dfac4c28048193c6317d840d72e07f398987b70710d2e582121e7260eef80"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysconfig/ReqSysConfigPagingVO.java": {
+      "role": "index",
+      "sha256": "a3584709d8199667b1731a2cc25d932d734f59406b1e555062a1e8980aa5460d",
+      "size": 299,
+      "normalized_sha256": "ac9198ba6da9cdf667c46074d7fc9ee6fbbbd65e567749cecae351d3715d4ef3"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysconfig/ReqSysConfigSaveVO.java": {
+      "role": "index",
+      "sha256": "bd8d86c3e618f43ad858966fee86c384d80912d6bff8fe933b55e136a397be9e",
+      "size": 837,
+      "normalized_sha256": "e4ea679b7339b473ca9380094302167abec859f8352fdc359ba32b88055779d6"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysconfig/ReqSysConfigUpdateVO.java": {
+      "role": "index",
+      "sha256": "eeafbc260f021a4779366c1e660135d066f3bc9da90118c3e10fb24735508c0d",
+      "size": 437,
+      "normalized_sha256": "8d64f9cc47ee3b88731b1fb41dda4b232a0bec7370ce51b61ff8fb171b8d45fc"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysconfig/ReqSystemConfigValueMapVO.java": {
+      "role": "index",
+      "sha256": "9cd9ba1a723630267fb98c3acfb9b42dfac9cf1404cb4e8887b2d05c65f7a11d",
+      "size": 451,
+      "normalized_sha256": "7b535a210fd14420d98cee1222f5ddcb5a8ed58508f518d2c2dc39b7c80fdcc7"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysconfig/ReqSystemConfigValueVO.java": {
+      "role": "index",
+      "sha256": "5df24d4178ea8cd03fe6f5d93bd47d2e385c32cc8845a585be46c9b21f4f615b",
+      "size": 371,
+      "normalized_sha256": "54783d982064b6defb2fd7da4176082757d9aa1a9b0226b6213b4366ffd11352"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysmenu/ReqSysMenuPagingVO.java": {
+      "sha256": "063acbbc6f9e3aa84ac2c1fa900b58389d5f27f50d76a04bf7d196f6d9aa04e5",
+      "size": 2549,
+      "normalized_sha256": "063acbbc6f9e3aa84ac2c1fa900b58389d5f27f50d76a04bf7d196f6d9aa04e5"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysmenu/ReqSysMenuSaveVO.java": {
+      "sha256": "71f9c1d7130e7b7a958f55ba87515cdbf4b5e5a6a9e7addcff0210f35750f30b",
+      "size": 2564,
+      "normalized_sha256": "71f9c1d7130e7b7a958f55ba87515cdbf4b5e5a6a9e7addcff0210f35750f30b"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysmenu/ReqSysMenuUpdateVO.java": {
+      "sha256": "7170f30ef455f3f95df32c68a18adcb4ad0468e6f555145fceb27688468be31b",
+      "size": 2566,
+      "normalized_sha256": "7170f30ef455f3f95df32c68a18adcb4ad0468e6f555145fceb27688468be31b"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysrole/ReqSysRolePagingVO.java": {
+      "sha256": "b4caf3a91a45d1f4cd5a4f82cf1560167fe46b0e75d6e67a6e9e121c39858d85",
+      "size": 1652,
+      "normalized_sha256": "b4caf3a91a45d1f4cd5a4f82cf1560167fe46b0e75d6e67a6e9e121c39858d85"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysrole/ReqSysRoleSaveVO.java": {
+      "sha256": "fe84284038f44cda7b5a4aaefd5652af1b80f4ccbb21be7886c38ce116597929",
+      "size": 1667,
+      "normalized_sha256": "fe84284038f44cda7b5a4aaefd5652af1b80f4ccbb21be7886c38ce116597929"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysrole/ReqSysRoleUpdateVO.java": {
+      "sha256": "1aeb1337a0925c07598f3d978c7c0acd2b9a7ed73eb341d50f8fa3f29f0a8890",
+      "size": 1669,
+      "normalized_sha256": "1aeb1337a0925c07598f3d978c7c0acd2b9a7ed73eb341d50f8fa3f29f0a8890"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/systenant/ReqSysTenantPagingVO.java": {
+      "sha256": "085d05c64e66e39e4fe4513aef275d929d608bfd466739123e8657a2509fbc3a",
+      "size": 1530,
+      "normalized_sha256": "085d05c64e66e39e4fe4513aef275d929d608bfd466739123e8657a2509fbc3a"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/systenant/ReqSysTenantSaveVO.java": {
+      "sha256": "5ab0b06c8819e809c4a9d42f42fa067fbd5c69bedc67d16a46c16da085a7e648",
+      "size": 2312,
+      "normalized_sha256": "5ab0b06c8819e809c4a9d42f42fa067fbd5c69bedc67d16a46c16da085a7e648"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/systenant/ReqSysTenantUpdateVO.java": {
+      "sha256": "e28d2c2cfa40063e9ebd2348b2ad7aae408eb6c4234086db162b66b737255ee4",
+      "size": 1548,
+      "normalized_sha256": "e28d2c2cfa40063e9ebd2348b2ad7aae408eb6c4234086db162b66b737255ee4"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysuser/ReqSysUserPagingVO.java": {
+      "sha256": "22bf64c56c642b4bc0ffda98fd07ef5f8b3f6476776883bacec981f0ced6151e",
+      "size": 2038,
+      "normalized_sha256": "22bf64c56c642b4bc0ffda98fd07ef5f8b3f6476776883bacec981f0ced6151e"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysuser/ReqSysUserSaveVO.java": {
+      "sha256": "4e8aedc8a6d47de458ba7dd63cab99a60d27bf0bd38e282774a4f4f274087cec",
+      "size": 2053,
+      "normalized_sha256": "4e8aedc8a6d47de458ba7dd63cab99a60d27bf0bd38e282774a4f4f274087cec"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/req/sysuser/ReqSysUserUpdateVO.java": {
+      "sha256": "901693d9ea7086d8e4dd5cf3d02f1440a66133317ade7ce5770213e01286da3c",
+      "size": 2055,
+      "normalized_sha256": "901693d9ea7086d8e4dd5cf3d02f1440a66133317ade7ce5770213e01286da3c"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/ResLoginVO.java": {
+      "role": "index",
+      "sha256": "b78de634bd7d485834a0122911892af8d4e37f0db242b25a3fd066f7e8ec3abc",
+      "size": 1304,
+      "normalized_sha256": "a46e61f29eddd349c9fffead62aab923b06e0060cefc667c6fb31d11720a0ef0"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/ResMenuTreeVO.java": {
+      "sha256": "7c4a3a7789b65d962c0273df9bf06db03d94c23f35a4bd3aa6ebe1b72044e7f2",
+      "size": 1177,
+      "normalized_sha256": "036e2a84d2ffb1837f63eeb2dd8da694ee6b72476a86966c8eb289b6f0682dca"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysconfig/ResSysConfigPagingVO.java": {
+      "role": "index",
+      "sha256": "fdadc0a67ece821ebdc9cee89faba98c9de4667eb0db9affcfd31c3cad5d56f5",
+      "size": 453,
+      "normalized_sha256": "9691b017742b925520fbce806ee131a98cffbb21e68665ddeba1a5d9d60738f6"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysconfig/ResSysFormPagingVO.java": {
+      "role": "index",
+      "sha256": "21ef88a21125b2e497817e7e27f330d75e23b4447a5d1dc6f3cd7881fdb03eba",
+      "size": 413,
+      "normalized_sha256": "bfd9009e6231f818e46261d717f5ed864eff5de105a7dbca34b15798ceeee7ba"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysmenu/ReqBindRoleMenuVO.java": {
+      "role": "index",
+      "sha256": "c597b16e76c7dcaba420141f35eb9c1e7b162938bd4967e267821fde44203db0",
+      "size": 475,
+      "normalized_sha256": "ccdc698d37aff3631b0878e9a8bbf04f5808a1901f968fa351cd0cbf838cf578"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysmenu/ReqBindTenantMenuVO.java": {
+      "role": "index",
+      "sha256": "28c808562f263ddccef62f6aa68594a2447758df6ed8c5e2c043ad46f669db2c",
+      "size": 556,
+      "normalized_sha256": "8f158d4442f8493f497265552394ffe1949f0af4f32ce8201cdeb1933e26a8f0"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysmenu/ReqRoleMenuVO.java": {
+      "role": "index",
+      "sha256": "c30cece290e2401399a31ddb178be40acd6fba85b6135e267138660080af5fff",
+      "size": 319,
+      "normalized_sha256": "a19ba5c156c1a548cd10c35c75dba41b81dad9e690812310e89d5ad6313356da"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysmenu/ReqTenantMenuVO.java": {
+      "role": "index",
+      "sha256": "1d5e521ac876a0243c816237738e995d772fa918132e93edbb8714f8110904d2",
+      "size": 324,
+      "normalized_sha256": "0aa8ccf6b4029dd4ac6b97e48797fc06a44adb982eb970367ae9f9cca7860068"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysmenu/ResMenuBtnVO.java": {
+      "role": "index",
+      "sha256": "d2f24fdaf6953a382b7cb3c20207799355e1c55797f1974115a1099a5d7689da",
+      "size": 392,
+      "normalized_sha256": "7a380e93fb112cd16dea76db115a095ff4c86baf84b1fde1457eac919b9b4458"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysmenu/ResSysMenuPagingVO.java": {
+      "sha256": "3287d3885582ddb9777a0501bf11a86f89350896cd7af318c0e7734af367607a",
+      "size": 2681,
+      "normalized_sha256": "3287d3885582ddb9777a0501bf11a86f89350896cd7af318c0e7734af367607a"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysrole/ResSysRolePagingVO.java": {
+      "sha256": "5633652090edeecfc583089bbac9873599097de175297d0ebcb0eead4269dc9d",
+      "size": 1784,
+      "normalized_sha256": "5633652090edeecfc583089bbac9873599097de175297d0ebcb0eead4269dc9d"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysrole/ResUserRoleVO.java": {
+      "role": "index",
+      "sha256": "bb2259f6862d6c96ea4bcf91bc4e75e46046f38a709da908d587c7bd6b36cc8e",
+      "size": 340,
+      "normalized_sha256": "e14f0fd4618230d8a79551adfe8b06c6b8b49e4b7d7213990c1d7c94e93b5f2e"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/systenant/ResSysTenantPagingVO.java": {
+      "sha256": "690f657d3124175cb202b9d6fc8dc81d34d7a8e5637fac86922fc0b65cd8401c",
+      "size": 1663,
+      "normalized_sha256": "690f657d3124175cb202b9d6fc8dc81d34d7a8e5637fac86922fc0b65cd8401c"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysuser/ReqBindRoleVO.java": {
+      "role": "index",
+      "sha256": "9851f4e3c869279f3ed88b67692bb80299bd37b83c5ed8958fd6a2d940c7e184",
+      "size": 411,
+      "normalized_sha256": "48c2a946a47f960c49f5e57d0a6873bbd81b082b3a91702e21a134d91d88183b"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysuser/ResSysUserPagingVO.java": {
+      "sha256": "58ce53805f30f81e26c0fc16c107c5dfb344a4650b52b7e197bc504ed5ff6591",
+      "size": 2327,
+      "normalized_sha256": "58ce53805f30f81e26c0fc16c107c5dfb344a4650b52b7e197bc504ed5ff6591"
+    },
+    "na-upms/src/main/java/com/na/admin/controller/vo/res/sysuser/ResUserInfoVO.java": {
+      "role": "index",
+      "sha256": "cc29be213313a25cdc6d0a514ff094dc39e1d6211bdc49f39e91d06ffda3ea93",
+      "size": 1336,
+      "normalized_sha256": "453421e0a7e0405dab312feed5469593d614b3a3290af411f3d884dee2dfb203"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysMapRoleMenuService.java": {
+      "role": "index",
+      "sha256": "d5cf642964cb5b74b6474e3942f3e253046d6848ab4310cf28065fbd4152bae3",
+      "size": 189,
+      "normalized_sha256": "d5cf642964cb5b74b6474e3942f3e253046d6848ab4310cf28065fbd4152bae3"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysMapRoleUserService.java": {
+      "role": "index",
+      "sha256": "dcad314278d54b6247ffb9706c644e305e74c4aa5b7750e7fdcc5037e949faca",
+      "size": 188,
+      "normalized_sha256": "dcad314278d54b6247ffb9706c644e305e74c4aa5b7750e7fdcc5037e949faca"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysMapTenantMenuService.java": {
+      "role": "index",
+      "sha256": "a63898bb4d5e69d8c885371aaf3ec19e5d3e9164c5dcc7ce7e89518bd1ab1212",
+      "size": 191,
+      "normalized_sha256": "a63898bb4d5e69d8c885371aaf3ec19e5d3e9164c5dcc7ce7e89518bd1ab1212"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysMenuService.java": {
+      "role": "index",
+      "sha256": "a546214399362f287447fa5e9f52e16592dd945e057af3a182740f5fefe79982",
+      "size": 1040,
+      "normalized_sha256": "a546214399362f287447fa5e9f52e16592dd945e057af3a182740f5fefe79982"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysRoleService.java": {
+      "role": "index",
+      "sha256": "76f6f6acdba61e8a3c514d23e4bd7a0e269b5a0cc42e81ccba9e2ff010666212",
+      "size": 508,
+      "normalized_sha256": "76f6f6acdba61e8a3c514d23e4bd7a0e269b5a0cc42e81ccba9e2ff010666212"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysTenantService.java": {
+      "role": "index",
+      "sha256": "06aa33c6ea5fc830e024f8b991d3a08a36f567b478cca723b2d1fe1c1b33da31",
+      "size": 530,
+      "normalized_sha256": "06aa33c6ea5fc830e024f8b991d3a08a36f567b478cca723b2d1fe1c1b33da31"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISysUserService.java": {
+      "role": "index",
+      "sha256": "edce3f6a47d9355d9b481f2ff4e008c5399ec8c05de59a6c832230bc4eb713ad",
+      "size": 971,
+      "normalized_sha256": "edce3f6a47d9355d9b481f2ff4e008c5399ec8c05de59a6c832230bc4eb713ad"
+    },
+    "na-upms/src/main/java/com/na/admin/service/ISystemConfigService.java": {
+      "role": "index",
+      "sha256": "dad32562c042451c8db676b963a0ab65724da0036faa18207a3e584e72558f04",
+      "size": 575,
+      "normalized_sha256": "b9b656551616156ffdc15e40a4905f08f9efe7a7dd657daa483f6a61805082d2"
+    },
+    "na-upms/src/main/java/com/na/admin/service/MyAuthCheckedServiceImpl.java": {
+      "role": "index",
+      "sha256": "7a5acef18a4da5bdbcf2656845f149c41ac972d1fbb99cf61bbbe9436d682dc9",
+      "size": 11131,
+      "normalized_sha256": "0e5c26413cdd0e9818622ef0216e923a895e4f9dabbf1afa17823a5462f17480"
+    },
+    "na-upms/src/main/java/com/na/admin/service/MyRedisKeyExpirationListener.java": {
+      "role": "index",
+      "sha256": "ef64c49816281aedf8309d7b4156741fda37e9226a25003718339df3f752906c",
+      "size": 1542,
+      "normalized_sha256": "15f97c6cf57b957e4965d511a5054addb0a29229c163344827705974faf17e1d"
+    },
+    "na-upms/src/main/java/com/na/admin/service/NoRepeatSubmitUserServiceImpl.java": {
+      "role": "index",
+      "sha256": "fce607983bd35b7bd230acb59e55d951ea259d031120e5bb2e536e34b9b6d046",
+      "size": 385,
+      "normalized_sha256": "fbe8789b06a4ce25c1a18fdbcb7338fb8d2724db7d4eeb42a47a2ce202080284"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysMapRoleMenuServiceImpl.java": {
+      "role": "index",
+      "sha256": "d01c3731417f21ca813d5e3e9cfe699ca3ec3b8db8b05309a68367023da829b8",
+      "size": 834,
+      "normalized_sha256": "d01c3731417f21ca813d5e3e9cfe699ca3ec3b8db8b05309a68367023da829b8"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysMapRoleUserServiceImpl.java": {
+      "role": "index",
+      "sha256": "86fdcda67c6fd6a103e7cb3fcbac08afc074014747bf2b12b6f05efe78b8a8c8",
+      "size": 834,
+      "normalized_sha256": "86fdcda67c6fd6a103e7cb3fcbac08afc074014747bf2b12b6f05efe78b8a8c8"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysMapTenantMenuServiceImpl.java": {
+      "role": "index",
+      "sha256": "d4371aea3dd4008d3aba7bab866462ae08a64abb1b7e6cb1b1acfdf33c4744a6",
+      "size": 852,
+      "normalized_sha256": "d4371aea3dd4008d3aba7bab866462ae08a64abb1b7e6cb1b1acfdf33c4744a6"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysMenuServiceImpl.java": {
+      "sha256": "cc6fca642ec3fef2fa9914ce88286a358ea59b804940a52b0f82dd9d39ca3f8d",
+      "size": 23629,
+      "normalized_sha256": "cc6fca642ec3fef2fa9914ce88286a358ea59b804940a52b0f82dd9d39ca3f8d"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysRoleServiceImpl.java": {
+      "role": "index",
+      "sha256": "9455eec5a44008493bfdefca66c957af8201f6fc107546d8fe56c8bded543a2b",
+      "size": 4153,
+      "normalized_sha256": "9455eec5a44008493bfdefca66c957af8201f6fc107546d8fe56c8bded543a2b"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysTenantServiceImpl.java": {
+      "sha256": "db9f8c68073510a4ccdf09ac260813c5f99f3689525f6090d25b74bb4067e3d3",
+      "size": 7847,
+      "normalized_sha256": "db9f8c68073510a4ccdf09ac260813c5f99f3689525f6090d25b74bb4067e3d3"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SysUserServiceImpl.java": {
+      "sha256": "b62b0246cccd68d9759be23ec32b981a1adf7ddb31dd7822e3d927b29e4335e3",
+      "size": 15634,
+      "normalized_sha256": "b62b0246cccd68d9759be23ec32b981a1adf7ddb31dd7822e3d927b29e4335e3"
+    },
+    "na-upms/src/main/java/com/na/admin/service/impl/SystemConfigServiceImpl.java": {
+      "role": "index",
+      "sha256": "f62a81176bba12f96c8909d87d988c242b5dddf606fa4142e4bcdce930a8719e",
+      "size": 12499,
+      "normalized_sha256": "db12b91f3e551fbd5a41474fe082c5f205994b70660c84658a91359f497a3bae"
+    },
+    "na-upms/src/main/java/com/na/admin/utils/CaCheUtils.java": {
+      "role": "index",
+      "sha256": "5e157d2538bc2b7ac1e9baddab834e7d48e38b3c4368183d026a5e6ec6ef9659",
+      "size": 1751,
+      "normalized_sha256": "a0284678bf2dbef0fd5fb42588819d89a7270b2ec1e088c3c2f1a99d6f774224"
+    },
+    "na-upms/src/main/java/com/na/admin/utils/CodeGeneratorUtil.java": {
+      "role": "index",
+      "sha256": "cb5e9bf3c0d6df3bc94f81f4ba4a631dd94a4542a6d744f7b1ed94d28b4d6be6",
+      "size": 52739,
+      "normalized_sha256": "2a6fec086db3e6a6c086a7981479054088bfaa71b16035296229032b91f80d4e"
+    },
+    "na-upms/src/main/java/com/na/admin/utils/MenuUtil.java": {
+      "role": "index",
+      "sha256": "4ddc8777ed4c988fd979c152f21648e9e9f32e770f8bfe7a6f9835bd37eb9aee",
+      "size": 8154,
+      "normalized_sha256": "a36f65c6faba391256fc71711c5734d199f65844dc6825af900f1acb7f2db103"
+    },
+    "na-upms/src/main/java/com/na/admin/utils/SysInfoUtil.java": {
+      "role": "index",
+      "sha256": "6921cb83d1da24c483853bdc961998430870b978f9dae46b1e339cc50e3f715a",
+      "size": 9469,
+      "normalized_sha256": "fa0b97fc80afd2537a7f38dc70948390426e5b7045755ce6be61ae89551a843e"
+    },
+    "na-upms/src/main/resources/bootstrap-dev.yml": {
+      "role": "index",
+      "sha256": "30e4fbb9280519705b3c38160cb9f68b6f075a9a8e4adf1202dc7675ef4876e0",
+      "size": 297,
+      "normalized_sha256": "275230a46fe1e79af369622edb3b2bc8b011193b704bedaf1ef91bdee6c9b5e3"
+    },
+    "na-upms/src/main/resources/bootstrap-prod.yaml": {
+      "role": "index",
+      "sha256": "06c9dfa7c6bfb38e6f79abdc2a6f53076d435ef0261fe00f32c3cca39bf6eb67",
+      "size": 691,
+      "normalized_sha256": "2cbfa39083c1b12d5658a46163ac76d399d24121fe634951d1f587ead4968171"
+    },
+    "na-upms/src/main/resources/bootstrap.yaml.bak2": {
+      "role": "index",
+      "sha256": "c9455d62403da2bba1734cf2546fc98fd956fe8f81d40c57347f5c5391e8d744",
+      "size": 516,
+      "normalized_sha256": "67e9c16254f10ca9472fab1621529f89148a1edba7211393a36a0a9a3709eaed"
+    },
+    "na-upms/src/main/resources/bootstrap.yml": {
+      "sha256": "524fb88eb75c4ce6d1358f2a2971253c7bf404121960cb75d8c2719ccfb873d7",
+      "size": 5579,
+      "normalized_sha256": "524fb88eb75c4ce6d1358f2a2971253c7bf404121960cb75d8c2719ccfb873d7"
+    },
+    "na-upms/src/main/resources/logback-spring.xml": {
+      "role": "index",
+      "sha256": "379aeaf093c70ce8a4a0acba06c7e10e246ccffea3382554eb0697e96907d94a",
+      "size": 6973,
+      "normalized_sha256": "379aeaf093c70ce8a4a0acba06c7e10e246ccffea3382554eb0697e96907d94a"
+    },
+    "pom.xml": {
+      "role": "index",
+      "sha256": "5a6b2b8246ae889853b1f83cc26925061722d34fb2aa609c0038f44188f306ff",
+      "size": 1321,
+      "normalized_sha256": "69ce6708d6ef5c3f0fd88ec15e140e84b89e18a06455a5ac3364f779624ef49d"
+    }
+  },
+  "managed_scope": {
+    "version": "managed-scope-baseline/v1",
+    "policy_identity": "e091a9e9e7e7bae3d6bb24f2ca7e8f9ea659045a105c718c3a7ac0786869517d",
+    "observe_change_policy": "review_required",
+    "budget_policy_identity": "15e9b37a6c57e9bf03c9df3d0d049eb5b9a7f5540f9d34960408114e2538a32d",
+    "budget_policy": {
+      "version": "cognition-budget-policy/v1",
+      "mode": "enforce",
+      "whole_index": {
+        "target_tokens": 200000,
+        "warning_tokens": 300000,
+        "max_tokens": 400000
+      },
+      "r": [
+        {
+          "min_c": 1,
+          "max_c": 4,
+          "target_tokens": 25,
+          "max_tokens": 50
+        },
+        {
+          "min_c": 5,
+          "max_c": 7,
+          "target_tokens": 45,
+          "max_tokens": 90
+        },
+        {
+          "min_c": 8,
+          "max_c": 8,
+          "target_tokens": 70,
+          "max_tokens": 140
+        },
+        {
+          "min_c": 9,
+          "max_c": 9,
+          "target_tokens": 90,
+          "max_tokens": 180
+        }
+      ],
+      "s": [
+        {
+          "min_c": 1,
+          "max_c": 4,
+          "target_tokens": 20,
+          "max_tokens": 40
+        },
+        {
+          "min_c": 5,
+          "max_c": 7,
+          "target_tokens": 40,
+          "max_tokens": 80
+        },
+        {
+          "min_c": 8,
+          "max_c": 8,
+          "target_tokens": 70,
+          "max_tokens": 140
+        },
+        {
+          "min_c": 9,
+          "max_c": 9,
+          "target_tokens": 100,
+          "max_tokens": 200
+        }
+      ]
+    },
+    "apply_authorization_mode": "auto"
+  },
+  "database_cognition": {
+    "version": "database-cognition-binding/v1",
+    "entries": [
+      {
+        "object_ref": "database://na-app-mysql/na_app/sensitive_word",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "9610c1b53fbdcbcb9bb5f3f33739d75f9f2fa0dfa84654527c5d810fa94b2906",
+        "entry_sha256": "3a773b6213f4d1c58a50f6878ebbfb289f8fcffd4c0b7f2783fbf4222aef23b7"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_dept",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "7679694fc7289789929929f32b2b807109353667254c731defc17eb0345280cd",
+        "entry_sha256": "88c125edb2a2b495be5e8b3236e73cb3bd933c926d63e4b5beaabf301578e142"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_logs",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "fa03c8789959e0d8b6011772035305bb8a3ea4e49467d260d9e644b038baf044",
+        "entry_sha256": "81fdccc99b6231673868cfa35c8da572ca033a4fc744693606f23d2ac627100c"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_map_role_menu",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "91ef936c805d7521645eb4f30213f946e4ccc9c5d72d6fbefd2ee53c47fd1bb4",
+        "entry_sha256": "3260bf508204c92ba752467467a2a125c25e5b714fd6b21a7dce0967855f5c90"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_map_role_user",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "9bf4e4e29a18c9caffb26ac31bafe2ff39f0a9adf3d1d043159767e2fc6e84be",
+        "entry_sha256": "497b8e0a52d5b40fb468e510a71a69de88f3512d07c47f1b82a72bedb82fb45f"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_map_tenant_menu",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "0eb7d9f1148e0c96ba46326209fff3f28f9e7baa2dc9abd4c624495ca46faff2",
+        "entry_sha256": "bac0cd056de4e44fe55057120e59704f81fb4bb4c86dc99c18e359ef3543adbb"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_map_user_dept",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "9c98fcfd899e4adf5c24a5347f938e8f01abcdbb806fd4dac63a3975f7421d33",
+        "entry_sha256": "25b352e04d386b2a3716c8715557166e85454727355c968e5bd4ff75686ba608"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_map_user_post",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "8fbc5b8bc14608861d0276f5835aec777560411607dd4c909a6957ce2dc869f6",
+        "entry_sha256": "a1b6115f34a9e61cf5f370d650071450e292b395b93714572fc5a66afe824d89"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_menu",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "ef0e336b1388a0de138c00c1d1d621faf7ab008ae138ab9d6cac994d9546b062",
+        "entry_sha256": "34461727711bcc2fc3e933513ad3c84296deab262352978fd4ec2f70a198c556"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_post",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "530ea0c26d21abd2f22185b3eee4d56109b076cce057cb7d658eeb788329f3f6",
+        "entry_sha256": "e9473faa13748fc87aac425a1f562b17aacfa9acfa206b61e44102269cd3fa71"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_role",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "76080fb635c1883e41dc20e6a3dcd32434c122bd18896ba36f45bb89e2eb71b3",
+        "entry_sha256": "e429a95882afaeb2150b03a8fafa79c9f2fc47a66825e5d4354968c1798db2fa"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_tenant",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "8fd0cb965141823bdc5c7f515312d0027d4c87de76b756b7e99033484f5e905a",
+        "entry_sha256": "dd6745f8a9dd5e97efc0deb955038ae597b52e1f89b817f0cfec8f70a8d09a92"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_user",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "04180e6bcea3cb74abc778beb6ba98d1c4b7e20a02526329f70b8f05c0d36b64",
+        "entry_sha256": "69ad225297ab5c9b9d85f0b381e9583ed7ba8457695cd720c4377e9600ce6dec"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/sys_user_token",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "41ca9f8fabf3f3b2def97d01076e913284ddf95ded82fc3f9225b72a995c6efc",
+        "entry_sha256": "122818e604b3e027fd786d4ffcbc28fa3daccc89042421952a218925ccc8d474"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/system_config",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "d54bcec1672e5ad7115c2f699d75517654893040551032944793a3cf48c64ca6",
+        "entry_sha256": "7b2a8b38cc7cc7bcb18e0df2cc4c0c2507bd8acd15e1b44b0a90baacac9471b2"
+      },
+      {
+        "object_ref": "database://na-app-mysql/na_app/system_form",
+        "source_id": "na-app-mysql",
+        "evidence_version": "database-evidence/v1",
+        "table_evidence_sha256": "bb6a6a884a0fe86e505d3705542a1840484734e1c9140b58c264124af51e99af",
+        "entry_sha256": "e9e64796ff03e7f8f50a73adf3ae61d4fcc2769123b17a5947d23634a059db63"
+      }
+    ]
+  }
+}

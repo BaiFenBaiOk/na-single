@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.na.core.mapper.ISysMapRoleMenuMapper">
+
+    <select id="queryPaging" resultType="com.na.entity.SysMapRoleMenuEntity">
+        SELECT * FROM sys_map_role_menu
+        <where>
+            <!-- 自行拼接查询条件 -->
+        </where>
+    </select>
+
+    <select id="queryAllRoleMenuByRoleId" resultType="com.na.entity.SysMapRoleMenuEntity">
+        SELECT DISTINCT
+        mrm.*
+        FROM
+        sys_map_role_menu mrm
+        INNER JOIN sys_menu m ON m.id = mrm.menu_id
+        WHERE
+        m.is_del = 0
+        <if test="roleId != null">
+            AND mrm.role_id = #{roleId}
+        </if>
+    </select>
+
+    <delete id="deleteMapRoleMenuByRoleId">
+        DELETE FROM sys_map_role_menu
+        WHERE role_id = #{roleId}
+    </delete>
+
+</mapper>

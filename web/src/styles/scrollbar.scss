@@ -1,0 +1,32 @@
+// ============================================================
+// 统一细滚动条（WebKit + Firefox）
+// ============================================================
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(144, 147, 153, 0.35) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, 0.35);
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144, 147, 153, 0.55);
+}
+
+// 侧栏深色背景下滚动条加亮
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.18);
+}

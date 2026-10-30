@@ -1,0 +1,36 @@
+// ============================================================
+// 窄屏（H5）通用工具类与响应式收敛
+// 结构与尺寸主要由各组件内的 mobile mixin 负责，这里放跨页面通用项
+// ============================================================
+
+// 通用页面内边距：PC 16px，H5 10px
+.app-page {
+  padding: var(--app-gap);
+}
+
+@media (max-width: 767.98px) {
+  .app-page {
+    padding: 10px;
+  }
+
+  // 弹窗近全屏：顶部留出一点语境，内容区内部滚动
+  .app-responsive-dialog {
+    width: 94vw !important;
+    margin: 3vh auto 0 !important;
+
+    .el-dialog__body {
+      max-height: 72vh;
+      overflow-y: auto;
+    }
+  }
+
+  // 描述列表单列由组件 :column="1" 控制，这里收紧间距
+  .app-page .el-descriptions {
+    margin-bottom: 8px;
+  }
+
+  // 搜索 / 操作区按钮在窄屏更易点按
+  .filter-actions .el-button {
+    min-height: 32px;
+  }
+}

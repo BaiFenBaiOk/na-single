@@ -1,0 +1,63 @@
+// ============================================================
+// Element Plus 主题变量覆盖与组件级微调
+// 通过覆盖 EP 的 CSS 变量实现统一品牌风格，无需编译 EP 的 scss 变量
+// ============================================================
+
+:root {
+  // 主色阶
+  --el-color-primary: var(--app-color-primary);
+  --el-color-primary-light-3: #5b94ff;
+  --el-color-primary-light-5: #8eb6ff;
+  --el-color-primary-light-7: #c0d7ff;
+  --el-color-primary-light-8: #d8e7ff;
+  --el-color-primary-light-9: #ecf3ff;
+  --el-color-primary-dark-2: var(--app-color-primary-dark);
+
+  --el-border-radius-base: 6px;
+  --el-box-shadow: var(--app-shadow);
+  --el-font-size-base: 14px;
+}
+
+// 卡片统一圆角与轻阴影
+.el-card {
+  border-radius: var(--app-radius);
+  border-color: var(--app-border-color);
+}
+
+// 表格表头更清爽
+.el-table th.el-table__cell {
+  background-color: #f7f8fa;
+  color: var(--app-text-regular);
+  font-weight: 600;
+}
+
+// 表格紧凑模式下的行高（移动端使用 size="small"）
+.el-table--small .el-table__cell {
+  padding: 6px 0;
+}
+
+// 分页与卡片的间距
+.el-pagination {
+  justify-content: flex-end;
+  margin-top: var(--app-gap);
+}
+
+// 表单弹窗按钮统一右对齐
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+// H5：分页铺满、边距收敛
+@media (max-width: 767.98px) {
+  .el-pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .el-dialog__body {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
